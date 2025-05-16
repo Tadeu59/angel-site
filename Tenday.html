@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crazy24hbot</title>
+  <style>
+    :root {
+      --primary-color: #1f1fff;
+      --secondary-color: #ff2e63;
+      --bg-color: #0f0f2d;
+      --text-color: #ffffff;
+      --accent-color: #08d9d6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, var(--bg-color), #1c1c3f);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      animation: glow 2s infinite alternate;
+    }
+
+    .chat-button-top {
+      margin-top: 1rem;
+    }
+
+    a.chat-link {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--secondary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a.chat-link:hover {
+      background-color: #d12050;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px var(--primary-color);
+      }
+      to {
+        text-shadow: 0 0 20px var(--accent-color), 0 0 10px var(--primary-color);
+      }
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 800px;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .hero:hover {
+      transform: scale(1.02);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      background-color: var(--accent-color);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #05c2bc;
+    }
+
+    .chat-button-bottom {
+      margin: 3rem 0 1rem;
+    }
+
+    footer {
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 1rem;
+      }
+
+      .hero {
+        padding: 1.5rem;
+      }
+
+      .cta-button, .chat-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crazy24hbot</h1>
+    <div class="chat-button-top">
+      <a class="chat-link" href="https://t.me/Crazy24hbot" target="_blank">CHAT WITH BOT</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Everything you're looking for, the best content, we have it all here</h2>
+      <p>
+        This website is your official entry point to <strong>Crazy24hbot</strong> — a fast, intelligent, and customizable digital assistant, access the bot to pay for your content, we have the best content. Crazy24hbot is here to help you do more in less time. Click below to start chatting now!
+      </p>
+    </section>
+
+    <div class="chat-button-bottom">
+      <a class="chat-link" href="https://t.me/Crazy24hbot" target="_blank">CHAT WITH BOT</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Crazy24hbot. All rights reserved.
+  </footer>
+</body>
+</html>
